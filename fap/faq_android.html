@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no"/>
+    <title>model</title></head>
+<style>    html, body {
+    height: 100%;
+    font-family: "Microsoft YaHei", arial, SimSun, "宋体";
+}
+
+body, h1, h2, h3, h4, h5, h6, hr, p, dl, dt {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    max-width: 768px;
+}
+
+em, i, strong {
+    font-style: normal;
+    font-weight: normal;
+}
+
+img {
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+p {
+    text-indent: 1em;
+    font-size: 15px;
+}
+
+h2 {
+    font-style: normal;
+    font-size: 16px;
+    color: #4a4a4a;
+    line-height: 25px;
+}
+
+b {
+    font-size: 14px;
+    color: #4c4c4c;
+}
+
+h4 {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #4c4c4c;
+}
+
+#faq {
+    margin: 0 auto;
+    width: auto;
+    height: 100%;
+    background: #e7e7e7;
+}
+
+#faq_title {
+    width: 100%;
+    height: 40px;
+    background: #f9f9f9;
+    overflow: hidden;
+}
+
+#faq_title:after {
+    content: '';
+    width: 100%;
+    height: 0;
+    display: block;
+    clear: both;
+}
+
+#faq_title a {
+    width: 50%;
+    float: left;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40.5px;
+    font-size: 20px;
+    height: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+#faq_title > a > div {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+#right {
+    color: #f36858;
+    border-bottom: 3px solid #f36858;
+}
+
+#right_con p {
+    color: #4c4c4c;
+}
+
+#left {
+    color: #808080;
+}
+
+#left_con p {
+    color: #8c8c8c;
+}
+
+#left_con {
+    display: none;
+    background: #e7e7e7;
+    padding: 10px 10px 0 10px;
+}
+
+#right_con {
+    background: #e7e7e7;
+    padding: 10px 10px 0 10px;
+}
+
+.title {
+    background: #f9f9f9;
+    margin: 0 auto;
+    position: relative;
+    border-bottom: 1px solid #d1d1d1;
+    padding: 10px 30px 10px 15px;
+}
+
+.detail {
+    background: #f9f9f9;
+    margin: 0 auto;
+    display: none;
+    padding: 10px 15px;
+    line-height: 20px;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+.jianTou {
+    width: 15px;
+    height: 15px;
+    background: url(./img/down.png);
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+#jianTou {
+    width: 15px;
+    height: 15px;
+    background-image: url(./img/down.png);
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.smdetail {
+    padding-left: 40px;
+    font-size: 14px;
+    text-indent: 0;
+}
+
+img {
+    width: 80%;
+    height: auto;
+}
+
+.img_1 {
+    width: 100%;
+}</style>
+<body>
+<div id="faq">
+    <div id="faq_title"><a href="javascript:void(0);">
+        <div id="right"><strong>使用指导<br/></strong></div>
+    </a><a href="javascript:void(0);">
+        <div id="left"><strong>故障解决<br/></strong></div>
+    </a></div>
+    <div id="left_con">
+        <dl>
+            <dt id="faq_dt_80.71954596278486" class="title"><h2>如何修改记录仪WIFI名称及密码？</h2><div id="jianTou"></div></dt>
+            <dd class="detail"><p>
+                盯盯拍所有型号产品，原始连接密码：1234567890，通过点击（APP-设置-记录仪设置-记录仪密码），可以修改记录仪连接密码，修改密码成功后，ios系统手机，需要在手机WIFI功能中，找到记录仪WIFI，输入修改后的密码重新连接使用，android手机，系统自动重新连接使用</p>
+            </dd>
+        </dl>
+        <dl>
+            <dt id="faq_dt_52.18212039066352" class="title"><h2>记录仪开机没有提示音？</h2><div id="jianTou"></div></dt>
+            <dd class="detail"><p>
+                正常情况下，记录仪通电开机后，会有语音播报：hello，盯盯拍，如果开机后，记录仪没有语音播报，可以通过手机APP连接记录仪，查看是否将音量大小调节为0，或者在APP设置中，关闭了开机提示音。</p>
+            </dd>
+        </dl>
+        <dl>
+            <dt id="faq_dt_38.48975693163739" class="title"><h2>用手机APP查看回放，视频没有声音？</h2><div id="jianTou"></div></dt>
+            <dd class="detail"><p>确认是否关闭录音功能，可以通过手机APP设置，选择开启录音功能后，再进行录制；停车监控视频，只有画面没有声音。</p></dd>
+        </dl>
+        <dl>
+            <dt id="faq_dt_58.639381094467545" class="title"><h2>记录仪自动拍照</h2><div id="jianTou"></div></dt>
+            <dd class="detail"><p>可能属于碰撞拍照，用户可以通过手机APP,选择相应的碰撞感应灵敏度进行设置或关闭碰撞感应，具体路径：设置-记录仪设置-高级设置-碰撞感应灵敏度。</p></dd>
+        </dl>
+        <dl>
+            <dt class="title"><h2>记录仪无法开机</h2><div id="jianTou"></div></dt>
+            <dd class="detail"><p>
+                确认记录仪指示灯是否显示，是否有开机提示音，如指示灯不亮，且没有开机提示音，需要查看是否因供电问题导致，检查记录仪连接汽车哪里供电，mini系列和M6系列，可以使用充电宝供电，进行测试，X系列产品供电要求12V，需连接汽车保险盒供电，建议前往专业门店进行测试。</p>
+            </dd>
+        </dl>
+        <dl>
+            <dt class="title"><h2>电子狗不播报</h2><div id="jianTou"></div></dt>
+            <dd class="detail"><p>目前盯盯拍支持电子狗功能的产品型号包括：M6、MPlus，如果汽车行驶过程中，电子狗没有播报，可以查看APP音量大小是否设置为O，且是否设置开启电子狗功能。</p>
+            </dd>
+        </dl>
+        <dl>
+            <dt class="title"><h2>GPS无法定位</h2><div id="jianTou"></div></dt>
+            <dd class="detail"><p>
+                目前盯盯拍支持GPS定位功能的产品型号包括：M6、M6Plus、X2S、X2Pro，汽车处于空旷地带，记录仪开机运行一分钟左右，自动语音提示：定位成功，APP连接记录仪，竖屏预览界面，下方会有地图显示。</p>
+                <p>如果记录仪无法定位，需要先确定汽车是否处于空旷地带（类似地下停车场等地方，定位相对较慢），如果处于空旷地带无法定位，建议将记录仪取出，放在车外测试，排除车内信号干扰。</p></dd>
+        </dl>
+        <dl>
+            <dt class="title"><h2>记录仪语音提示“存储异常”</h2><div id="jianTou"></div></dt>
+            <dd class="detail"><p>当记录仪检测到储存卡异常，无法存储视频时，会有语音提醒：存储异常。</p>
+                <p>
+                    如果记录仪语音播报“存储异常”，需要检查记录仪是否安装储存卡，或储存卡是否安装正确，同时确认存储卡的品牌，容量大小，64G或以上容量储存卡，因为格式问题，使用前需通过盯盯拍APP进行格式化，建议购买正品class
+                    10高速储存卡使用。</p></dd>
+        </dl>
+        <dl>
+            <dt class="title"><h2>手机APP查看视频有卡顿现象</h2><div id="jianTou"></div></dt>
+            <dd class="detail"><p>
+                盯盯拍部分型号产品支持1440P高清分辨率，1440P分辨率对于播放设备要求较高，苹果5S以下或安卓5.0系统以下机型，查看视频会有卡顿现象，如果播放设备达不到1440P硬件要求，可以调低分辨率至1080P，进行播放。</p>
+            </dd>
+        </dl>
+        <dl>
+            <dt class="title"><h2>无法使用遥控器拍照，拍照时记录仪发出“叮”的提示音</h2><div id="jianTou"></div></dt>
+            <dd class="detail"><p>
+                盯盯拍部分型号产品：mini、M6、M6C、X1，在APP查看回放，或下载视频时，使用遥控器拍照，记录仪会发出“叮”的异常提示音，并且不会产生拍照文件；没有打开APP的情况下，使用遥控器拍照，发出“叮”的异常提示音，有可能属于拍照文件保存过多，未及时下载导致，可以将拍照文件下载到手机APP，或格式化储存卡后，再次使用。</p>
+            </dd>
+        </dl>
+        <dl>
+            <dt class="title"><h2>手机APP查看视频，找不到最后一段视频？</h2><div id="jianTou"></div></dt>
+            <dd class="detail"><p>有可能属于缩略图未下载完成，建议等待3分钟左右，再次连接APP查看视频，或将储存卡取出在电脑端查看。</p></dd>
+        </dl>
+        <dl>
+            <dt class="title"><h2>吉利博越车机系统连接不上记录仪</h2><div id="jianTou"></div></dt>
+            <dd class="detail"><p>
+                吉利博越车机系统，只支持盯盯拍X1连接使用，其他盯盯拍型号连接会有影响；如果确定产品型号为盯盯拍X1，可能由于网络问题导致，可以删除车机系统中，已保存的记录仪列表，重新添加即可。</p></dd>
+        </dl>
+        <dl>
+            <dt class="title"><h2>记录仪断电后，可以录像多长时间？</h2><div id="jianTou"></div></dt>
+            <dd class="detail"><p>目前盯盯拍内置电池，支持延时关机的产品型号包括：M6、M6C、M6Plus,记录仪电池充电半小时以上，延时关机的具体情况：</p>
+                <p class='smdetail'> 1、记录仪保持静止，拔掉USB进行断电——立刻关机<br> 2、拔掉记录仪主机（摄像头）——延时3分钟左右关机<br>
+                    3、记录仪有移动，拔掉USB进行断电——延时3分钟左右关机</p>
+                <p>mini系列、X系列型号产品内置超级电容，记录仪断电后，最多延时6秒左右。</p></dd>
+        </dl>
+        <dl>
+            <dt class="title"><h2>拍照视频，下载速度慢？</h2><div id="jianTou"></div></dt>
+            <dd class="detail"><p>盯盯拍记录仪下载平均速度200KB/S，下载速度与距离有一定关系，手机距离记录仪越近，下载速度越快。</p></dd>
+        </dl>
+        <dl>
+            <dt class="title"><h2>APP注册收不到验证码</h2><div id="jianTou"></div></dt>
+            <dd class="detail"><p>
+                检查手机安全软件，验证码短信是否被拦截，每天收到的系统短信，最多为5条，超过5条后，系统不会再发送验证码短信，如果手机未收到验证码短信，可能由于网络问题，可以尝试重启手机，再试一次。</p></dd>
+        </dl>
+        <dl>
+            <dt class="title"><h2>为什么机器工作一段时间，会发热？</h2><div id="jianTou"></div></dt>
+            <dd class="detail"><p>记录仪工作期间，CPU温度会持续上升，属于正常现象，盯盯拍行车记录仪工作时的正常温度在-20～70度之间，所有产品经过高温老化测试，并无安全隐患，请放心使用。</p>
+            </dd>
+        </dl>
+    </div>
+    <div id="right_con">
+        <dl>
+            <dt class="title"><h2>盯盯拍指示灯介绍</h2><div id="jianTou"></div></dt>
+            <dd class="detail"><p>M6/M6 Plus指示灯状态表示什么意思？</p>
+                <p>电源灯红灯，常亮正常，工作指示灯绿灯一秒闪烁一次，蓝灯闪烁表示正在搜星未定位成功，常亮表示定位成功。</p>
+                <p>M6C：电源灯红灯通电就会常亮，WiFi灯绿灯一秒闪烁一次，蓝灯不亮正常。</p>
+                <p> M5/M5S：中间的蓝灯是工作指示灯，闪烁正常，第一个绿灯电源灯，闪烁正常，第三个绿灯是WiFi灯，当APP未连接记录仪时常亮，APP连接记录仪后会开始闪烁。</p>
+                <p> 变形金刚专享版：正常工作橙色呼吸灯，停车监控蓝色呼吸灯，TF卡异常紫色快闪，升级橙色快闪。</p>
+                <p>mini/mini2/mini2S/X1：工作指示灯是红色，红灯闪表示正常工作，停车监控指示灯是蓝色，蓝灯闪红灯不亮表示记录仪当前处于停车监控模式。</p>
+                <p>miniONE/mini3：工作指示灯是红色，正常工作时呼吸闪烁。停车监控指示灯是蓝色，进入停车监控时呼吸闪烁；主机接入电脑时蓝灯常亮。存储异常时红、蓝灯同时快闪；主机升级时红、蓝灯同时常亮。</p>
+                <p>
+                    X2/X2Pro：前路工作指示灯是圆形绿灯，正常工作时一秒一闪，TF卡异常时快闪，工作异常时常亮。静音指示灯为圆形红灯，上有麦克风标志，静音键按下时，指示灯亮，表示静音，静音键再次按下，指示灯熄灭，表示在录音。
+                    停车监控指示灯为条状红灯，进入停车监控后，指示灯一秒一闪。 后路连接指示灯为条状绿灯，前后路记录仪连通时，指示灯常亮。 后路工作指示灯为条状绿灯，正常工作时一秒一闪，工作异常时常亮</p>
+                <p>mix3：工作指示灯是绿灯，正常工作时呼吸闪烁；主机异常时常亮。停车监控指示灯是红灯，进入停车监控时呼吸闪烁。存储异常时红绿灯同时快闪，主机接入电脑或升级固件时红绿灯常亮。</p></dd>
+        </dl>
+        <dl>
+            <dt class="title"><h2>添加记录仪（以盯盯拍X2Pro举例）</h2><div id="jianTou"></div></dt>
+            <dd class="detail"><p>
+                iOS系统：设置—无线局域网—选择WIFI“vYou_DDPai_X2Pro”—输入密码连接WIFI—点击打开APP—系统自动添加记录仪（默认密码1234567890）。</p>
+                <div><img src="./img/ios_1.png" alt="" class="img_1"><img src="./img/ios_2.png" alt="" class="img_1">
+                </div>
+                <p>Android系统：启动APP—主页面点击“记录仪”—点击右上角“+”添加记录仪—在WIFI列表中选择“DDPai_X2Pro”—输入密码添加记录仪（默认密码1234567890）。</p>
+                <div><img src="./img/and_1.png" alt="" class="img_1"><img src="./img/and_2.png" alt="" class="img_1">
+                </div>
+            </dd>
+        </dl>
+        <dl>
+            <dt class="title"><h2>视频回放及下载：</h2><div id="jianTou"></div></dt>
+            <dd class="detail"><p> 回放：
+                手机APP连接记录仪，进入预览界面，点击屏幕会显示进度条，拖动进度条或者滑动进度条上方缩略图，选择需要查看的时间点，点击缩略图或静止5秒钟，即可开始播放视频（拖动进度条时，选择放大时间轴，查找视频更精确）。</p>
+                <p>下载：
+                    下载记录仪视频：点击左侧底角下载按钮，选择“下载记录仪的视频文件”，拖动进度条或者滑动进度条上方缩略图，选择需要下载的时间点，点击缩略图或静止5秒钟，点击“开始下载”，即可边下载边观看，点击“完成下载”结束下载（下载视频最短5秒，最长5分钟）。</p>
+                <p>下载已拍照图片：点击下载按钮，选择“下载已拍照的图片文件”，进入拍照文件列表后，点击需要下载到手机的图片或者关联视频进行下载。</p>
+                <div><img src="./img/replay.png" alt="" class="img_1"><img src="./img/download_1.png" alt=""
+                                                                           class="img_1"><img src="./img/download_2.png"
+                                                                                              alt="" class="img_1"><img
+                        src="./img/download_3.png" alt="" class="img_1"></div>
+            </dd>
+        </dl>
+        <dl>
+            <dt class="title"><h2>APP支持手机与系统版本</h2><div id="jianTou"></div></dt>
+            <dd class="detail"><p>IOS：iPhone 4S以上及IOS7.0以上，较低版本无法支持最新APP。</p>
+                <p>Android：支持安卓4.0版本以上的手机，较低版本无法支持最新APP。</p></dd>
+        </dl>
+        <dl>
+            <dt class="title"><h2>自动下载遥控器按钮拍摄的照片或视频</h2><div id="jianTou"></div></dt>
+            <dd class="detail"><p>
+                手机APP连接记录仪之后，通过APP设置开启自动下载拍照文件，使用遥控器拍照时，拍照文件自动下载到手机APP，设置关闭自动下载拍照文件，使用遥控器拍照时，拍照文件不会自动下载到手机APP，可以通过APP手动下载。</p>
+                <p>打开自动下载拍照文件情况下，安卓手机APP后台运行时，仍然可以自动下载文件，苹果手机APP在后台运行时无法下载文件。</p></dd>
+        </dl>
+        <dl>
+            <dt class="title"><h2>遥控器配对及使用</h2><div id="jianTou"></div></dt>
+            <dd class="detail"><p>连接记录仪后，在APP设置中选择记录仪设置——高级设置，点击配对按钮，将遥控器靠近记录仪，快按3-5下，听到咔擦声或者APP上显示配对成功后即可正常使用。</p>
+                <p>按下遥控器，即可拍下当前图片并保存在SD卡中，如果在APP中打开了自动关联视频选项，记录仪自动保存图片前后5秒（共10秒）视频，手机连接记录仪后会自动下载至手机上并删除SD卡内图片和视频。</p>
+            </dd>
+        </dl>
+        <dl>
+            <dt class="title"><h2>告警声说明</h2><div id="jianTou"></div></dt>
+            <dd class="detail"><p>长期叮叮响，并且语音提示存储异常，请检查SD卡是否插入，格式化SD卡或者更换class 10高速卡。</p>
+                <p>使用遥控器拍照，提示咔擦声：表示拍摄正常；提示叮一声：表示存储卡已满，需要清理SD卡内存才可继续正常拍照。</p>
+                <p>部分型号在APP查看回放和下载视频期间，无法使用遥控器拍照，按键时会发出叮的一声。</p></dd>
+        </dl>
+        <dl>
+            <dt class="title"><h2>重置机器</h2><div id="jianTou"></div></dt>
+            <dd class="detail"><p>复位孔在摄像头卡槽附近，带有R或者RESET标识，在记录仪通电的情况下，使用尖锐物品（例如牙签，手机取卡针之类），长按复位孔6-10秒，等待记录仪重启，语音播报：hello
+                盯盯拍，表示复位成功</p></dd>
+        </dl>
+        <dl>
+            <dt class="title"><h2>怎样升级固件</h2><div id="jianTou"></div></dt>
+            <dd class="detail"><p>
+                在线升级：有新版本发布时，APP会进行推送提示升级、或者在APP内，依次进入“我—关于—检测新版本”根据提示升级即可（升级过程中记录仪请勿断电，待记录仪重启或APP提示升级成功后方可断电）</p>
+                <p>手动升级：从网站或论坛上下载升级包，解压和复制文件到SD卡内，插入记录仪通电后自动升级（升级过程中记录仪请勿断电，待记录仪重启或APP提示升级成功后方可断电）。具体升级教程可查看链接：<a
+                        href="http://www.ddpai.com/bbs/thread-20627-1-1.html">http://www.ddpai.com/bbs/thread-20627-1-1.html</a>
+                </p></dd>
+        </dl>
+        <dl>
+            <dt class="title"><h2>使用盯盯拍必须通过手机？</h2><div id="jianTou"></div></dt>
+            <dd class="detail"><p>盯盯拍记录仪在汽车连接的电源启动后自动循环录像，所有视频都记录在SD卡上，无需手机即可正常工作。可以用手机查看预览、回放和下载视频。</p></dd>
+        </dl>
+        <dl>
+            <dt class="title"><h2>连接盯盯拍会耗手机流量吗？</h2><div id="jianTou"></div></dt>
+            <dd class="detail"><p>不会，手机与记录仪通过WiFi连接，WiFi来源于记录仪内的WiFi模块，就像蓝牙连接，是不会耗费手机流量的。</p></dd>
+        </dl>
+        <dl>
+            <dt class="title"><h2>SD卡可以保存多久</h2><div id="jianTou"></div></dt>
+            <dd class="detail"><p>
+                在1080P模式下，16G卡大概可以录4小时，32G卡大概录8小时，最大支持128G，64G或以上容量储存卡，使用前需通过盯盯拍APP进行格式化，卡满后记录仪会自动循环覆盖。</p></dd>
+        </dl>
+        <dl>
+            <dt class="title"><h2>搜索不到记录仪WI-FI</h2><div id="jianTou"></div></dt>
+            <dd class="detail"><p>记录仪未开机或不在附近，请先给记录仪通电开机（记录仪会自动开机）；确认指示灯正常（请参考“我－帮助－指示灯状态“描述）并在记录仪附近进行操作；
+                手机WLAN开关未打开，请先打开手机WLAN开关（盯盯拍app如有权限会自动打开）;</p>
+                <p>盯盯拍app的“WLAN”、“位置服务”权限被禁用，请先对盯盯拍app授权“WLAN”、“位置服务”控制权限：</p>
+                <p>场景一：使用手机设置自带的权限管理（部分手机不支持此项功能）</p>
+                <p class="smdetail"> 1、进入手机设置界面<br> 2、进入应用管理界面，并找到“盯盯拍”<br> 3、点击“盯盯拍”进入应用信息界面找到“权限管理”类似选项，并进入权限管理界面<br>
+                    4、找到“开启WI-FI”、“管理WLAN”、“位置服务”、“定位”等类似的选项，并选择允许<br> 5、重启盯盯拍app</p>
+                <p>场景二：使用第三方管理软件，类似“手机安全卫士”,以“360手机卫士”为例</p>
+                <p class="smdetail">1、打开"360卫士"，选择"安全防护"<br> 2、进入"隐私行为监控"<br> 3、进入"软件隐私权限管理"<br> 4、找到盯盯拍并设为信任<br>
+                    5、重启盯盯拍app</p>
+                <p>WLAN频带设置不合适，请先重置WLAN频带（部分手机不存在此配置）：</p>
+                <p class="smdetail"> 1、进入手机设置界面<br> 2、找到“WLAN”选项，并进入WLAN设置界面<br> 3、找到“高级”选项，并进入WLAN高级设置界面<br> 4、找到“WLAN
+                    频带"类似选项，并选择”自动“选项</p>
+                <p>WLAN开启了“随时都可扫描”功能（部分手机不存在此配置）：</p>
+                <p class="smdetail">1、进入手机设置界面<br> 2、找到“WLAN”选项，并进入WLAN设置界面<br> 3、找到“高级”选项，并进入WLAN高级设置界面<br>
+                    4、找到“随时都可扫描"类似选项，并关闭选项<br> 5、关闭手机WLAN，再打开手机WLAN</p>
+                <p>已添加过对应的记录仪，请先检查记录仪列表，是否已存在对应记录仪（会被过滤显示）;</p>
+                <p>手机WLAN模块异常,请先关闭手机WLAN，再打开手机WLAN。</p></dd>
+        </dl>
+        <dl>
+            <dt class="title"><h2>添加或连接记录仪失败</h2><div id="jianTou"></div></dt>
+            <dd class="detail"><p>
+                手机系统支持智能切换网络并已开启，请在手机系统WLAN高级设置中关闭“智能切换网络”、“避开状况不佳的网络”等类似选项，同时连接记录仪WI-FI和手机移动网络，请先关闭手机移动网络。</p>
+                <p>连接记录仪时，提示密码错误： 重新输入记录仪密码，默认密码：1234567890 如步骤1还是提示密码错误，请尝试给记录仪恢复出厂设置；</p>
+                <p>多个手机频繁连接记录仪，请一分钟后再试 记录仪内部异常，请尝试重启记录-p;p[，如还是存在异常请尝试给记录仪恢复出厂设置。</p></dd>
+        </dl>
+        <dl>
+            <dt class="title"><h2>记录仪如何停车监控</h2><div id="jianTou"></div></dt>
+            <dd class="detail"><p>盯盯拍目前所有型号产品，不支持断电后,长时间录像，停车监控需要记录仪连接汽车常电，确保汽车熄火后，记录仪能持续录像，根据不同产品型号，接线方式不同。</p>
+                <p>盯盯拍mini系列和M6系列，供电要求5V，无法直接连接保险盒供电，可以购买盯盯拍原厂降压线，连接汽车常电配合使用；X系列产品，供电12V，可以直接连接保险盒供电使用。</p></dd>
+        </dl>
+        <dl>
+            <dt class="title"><h2>如何分享下载视频？</h2><div id="jianTou"></div></dt>
+            <dd class="detail"><p>打开手机APP，点击主页底部+号或相册视频文件，选中需要分享的视频，全屏播放，点击右上角分享图标，进入裁剪页面，拖动进度条选择视频片段（视频时间不能低于5秒），
+                点击下一步，导出视频，可以选择不同配乐场景进行编辑，编辑完成后的视频，IOS系统可选择分享微信朋友圈与在路上，安卓手机可选择分享微博，朋友圈或QQ。</p>
+                <div><img src="./img/share_1.png" alt="" class="img_1"><img src="./img/share_2.png" alt=""
+                                                                            class="img_1"><img src="./img/share_3.png"
+                                                                                               alt="" class="img_1"><img
+                        src="./img/share_4.png" alt="" class="img_1"><img src="./img/share_5.png" alt=""
+                                                                          class="img_1"><img src="./img/share_6.png"
+                                                                                             alt="" class="img_1"></div>
+            </dd>
+        </dl>
+        <dl>
+            <dt class="title"><h2>如何进行双路WiFi组网？</h2><div id="jianTou"></div></dt>
+            <dd class="detail"><p>目前盯盯拍型号产品只有M6Plus，支持与其他盯盯拍型号组网</p>
+                <p>组网条件：</p>
+                <p class="smdetail">1、记录仪列表中必须有一台记录仪是具备组网能力的M6Plus；<br>
+                    2、记录仪列表中还有另外一台记录仪，如M6、M6C或Mini（不支持与分辨率1440P记录仪，进行组网）；<br> 3、组网设备必须升级到支持组网的新固件版本；<br>
+                    4、两台组网记录仪需各自匹配遥控器。</p>
+                <p>组网方法：</p>
+                <p class="smdetail">1、两个遥控器分别与两台记录仪进行配对；<br> 2、两台记录仪、遥控器距离较近情况下，分别连续、快速按下遥控器5次，此时记录仪会播报语音“开始组网”；<br>
+                    3、两台设备均播报“开始组网”后，等待10s左右播报“组网成功”，即组网成功。</p></dd>
+        </dl>
+        <dl>
+            <dt class="title"><h2>存储卡预分配</h2><div id="jianTou"></div></dt>
+            <dd class="detail"><p>盯盯拍产品仅支持FAT32格式储存卡使用，储存卡装入机器后，自动改写程序，进行预分配。</p>
+                <p>根据不同产品型号以及储存卡容量大小，预分配时间不同</p>
+                <p>M6Plus/mini2/mini2s/X2/X2Pro：储存卡规模16G、32G、64G、128G；预分配对应时间依次为：5S、10S、25S、80S。</p>
+                <p>mini/M6/M6C/X1：储存卡规模16G、32G、64G、128G；预分配对应时间依次为：40S、70S、100S、5分钟、10分钟。</p>
+                <p>mini3：存储卡规模16G、32G、64G；预分配对应时间依次为：8S、12S、25S。</p></dd>
+        </dl>
+        <dl>
+            <dt class="title"><h2>记录仪功率大小，耗电是否严重？</h2><div id="jianTou"></div></dt>
+            <dd class="detail"><p>mini系列:2.5w左右。</p>
+                <p>M6系列：带电池的3w左右。</p>
+                <p>X2 Pro:4.5w左右。</p>
+                <p>根据电瓶容量大小，容量60AH,12V电瓶充满电的情况下，按盯盯拍mini举例说明：</p>
+                <p>60AH*12V=720W/2.5W=288H，正常可以使用10天左右，实际使用根据电瓶损耗程度，可能存在误差。</p></dd>
+        </dl>
+        <dl>
+            <dt class="title"><h2>高温断电关机</h2><div id="jianTou"></div></dt>
+            <dd class="detail"><p>
+                高温断电保护：记录仪持续工作一段时间后，对于cpu内部温度持续上升，或者记录仪暴露在高温环境中，可能对记录仪损坏或失效等风险，采取的暂停工作的方式，用来保护记录仪的硬件不被损坏，或者因cpu温度过高导致程序无法正常运行。</p>
+                <p>进入高温保护状态的表现：</p>
+                <p class="smdetail">1、运行指示灯熄灭。<br> 2、有“温度过高，系统关机的提示音”。<br> 3、关机前的视频录制可以正常结束，不会丢失视频文件。</p>
+                <p>退出高温断电保护的条件：</p>
+                <p class="smdetail"> 1、关机后G-sensor仍然工作，可以通过摇晃重新上电启动。<br> 2、关机后一小时会自动启动一次，如果启动后发现温度仍然过高，则会再次进入高温保护关机。<br>
+                    3、ACC打火可以启动。<br> 4、拔掉电源再插入可以启动。<br> 5、重启后默认会进入正常录像模式。</p></dd>
+        </dl>
+        <dl>
+            <dt class="title"><h2>怎么删除储存卡内的录像视频？</h2><div id="jianTou"></div></dt>
+            <dd class="detail"><p>如果需要删除所有视频，可以将储存卡通过APP进行格式化，APP连接记录仪-设置-记录仪设置-记录仪储存管理-格式化，即可删除所有视频文件。</p>
+                <p>如果需要删除部分视频，只能将储存卡取出，通过电脑端操作，在DCIM/200video文件夹中，选择需要删除的视频片段删除即可。</p></dd>
+        </dl>
+        <dl>
+            <dt class="title"><h2>储存卡内文件名称，所表示的内容？</h2><div id="jianTou"></div></dt>
+            <dd class="detail"><p>200video：录像文件夹，内容包含正常循环录像的MP4文件。</p>
+                <p>201photo：照片文件夹，内容包含未下载到手机APP的所有照片，包括碰撞拍照以及遥控器拍照。</p>
+                <p>202thumb：缩略图文件夹，包含未下载的视频、照片的缩略图 每个视频或者照片都必须对应有一张缩略图。</p>
+                <p>203gps：存放gps数据。</p>
+                <p>104edog：电子狗数据文件。</p></dd>
+        </dl>
+        <dl>
+            <dt class="title"><h2>什么是内置eMMC存储？</h2><div id="jianTou"></div></dt>
+            <dd class="detail"><p>eMMC (Embedded Multi Media Card)嵌入式多媒体控制器。</p>
+                <p>采用统一的MMC标准接口， 把高密NANDFlash以及MMCController封装在一颗BGA芯片中。</p>
+                <p>记录仪采用MLC的eMMC内置存储方案，读写次数约5000次，最低持续读写速度大约50M/S，相当于将存储卡安装在记录仪内部。</p>
+                <p>内置存储的好处：</p>
+                <p class="smdetail"> 1）无需安装存储卡， 避免因重复插拔造成的存储卡损耗；<br> 2）嵌入式设计，避免了外接式存储卡使用过程中，晃动或急刹车造成存储卡松动，导致的视频缺失；<br>
+                    3）读写速度更快，录制帧率更完整，避免因丢帧出现的花屏等异常情况；<br> 4）避免了用户另购存储卡，或购买市场部分不良存储卡，带来的不良体验。</p></dd>
+        </dl>
+        <dl>
+            <dt class="title"><h2>如何收集App或记录仪异常日志？</h2><div id="jianTou"></div></dt>
+            <dd class="detail"><p>一般App出现闪退等异常问题, 需要提取日志文件，配合开发人员定位问题所在。</p>
+                <p class="smdetail"> 1）App连接记录仪后，进入App的我-设置-APP高级设置-打开调试模式，重复之前导致App出现异常的操作；<br>
+                    2）进入App的我-关于-问题反馈，点击页面右上方按钮，在编辑框输入问题和意见，勾选提交日志，点提交到后台服务器（若不勾选无法获取日志)。<br>
+                    3）安卓版手机，可进入手机App内部存储地址\Android\data\com.vyou.vcameraclient中拷贝log文件夹下的所有文件，提交给我司客服人员。</p></dd>
+        </dl>
+        <dl>
+            <dt class="title"><h2>什么是SR？</h2><div id="jianTou"></div></dt>
+            <dd class="detail"><p>SR（ senser reality）增强现实传感数据，目的是通过可视化数据重现驾驶过程及驾驶行为。</p>
+                <p>通过记录仪内置的高精度6轴陀螺仪，可以灵敏感知记录仪，急加速、急转弯、上下坡及变道等各种状况下的驾驶表现，并同步生成专属酷炫轨迹界面，可及时分享。</p></dd>
+        </dl>
+        <dl>
+            <dt class="title"><h2>SR功能如何使用？</h2><div id="jianTou"></div></dt>
+            <dd class="detail"><p>mini3记录仪支持SR功能，记录仪录像的视频，默认带有驾驶数据。在App视频回放和下载界面，可以通过按钮选择是否显示驾驶数据；</p>
+                <p>相册内的视频数据，视频横屏播放时，右上角选择叠加数据，可将数据嵌入到视频中，即生成SR效果的视频。</p></dd>
+        </dl>
+        <dl>
+            <dt class="title"><h2>什么是IPS双安全电源技术？</h2><div id="jianTou"></div></dt>
+            <dd class="detail"><p>盯盯拍已申请专利的IPS安全电源防护技术，采用软硬件双层保护，停车监控时同时通过软件和硬件检测电瓶电压，解决电瓶亏电的后顾之忧。</p></dd>
+        </dl>
+        <dl>
+            <dt class="title"><h2>H.265是什么，有什么优势？</h2><div id="jianTou"></div></dt>
+            <dd class="detail"><p>是一种高效视频编码方式，相同存储空间下H.265能够显示更多的内容画面细节层次更丰富，动态画面更流畅。</p></dd>
+        </dl>
+        <dl>
+            <dt class="title"><h2>手机播放编码为H.265的视频卡顿怎么办?</h2><div id="jianTou"></div></dt>
+            <dd class="detail"><p>miniONE/mix3支持H.265编码。iOS11及 iPhone6S以上支持H.265硬解码。2015年以后主流旗舰安卓机支持H.265硬解码。</p>
+                <p>若手机播放H.265编码的视频卡顿，建议关闭H.265编码开关，进入我-设置-记录仪设置-高级设置页面，关闭”H.265视频编码“开关。</p></dd>
+        </dl>
+        <dl>
+            <dt class="title"><h2>记录仪使用内置eMMC存储， 如何在电脑上查看视频文件？</h2><div id="jianTou"></div></dt>
+            <dd class="detail"><p>miniONE/mini3/mix3采用内置eMMC高速闪存。主机提供USB接口连接电脑，可用作U盘使用，在电脑端查看或删减记录仪拍摄的文件。</p></dd>
+        </dl>
+        <dl>
+            <dt class="title"><h2>语音识别有什么功能?</h2><div id="jianTou"></div></dt>
+            <dd class="detail"><p>miniONE/mini3语音版/mix3支持语音识别功能。支持语音拍照、关闭录音、打开录音。</p>
+                <p>我要拍照：即可抓拍照片，可以开启拍照关联视频产生10秒的关联视频；</p>
+                <p>打开录音：用于打开录像时录音开关，之后所有的正常录像均可录下声音；</p>
+                <p>关闭录音：用于关闭录像时录音开关，之后所有的录像均没有声音。</p></dd>
+        </dl>
+        <dl>
+            <dt class="title"><h2>记录仪连接斑马车机支持哪些功能？</h2><div id="jianTou"></div></dt>
+            <dd class="detail"><p>mini3/mix3支持与斑马车机连接，支持实时画面预览、拍照及拍摄短视频，查看车机拍摄的照片和短视频。</p></dd>
+        </dl>
+        <dl>
+            <dt class="title"><h2>与斑马车机配对不成功？</h2><div id="jianTou"></div></dt>
+            <dd class="detail"><p>mini3/mix3支持与斑马车机配对。</p>
+                <p>斑马车机配对步骤如下：</p>
+                <p class="smdetail"> 1）将斑马车机中控通电启动，并确保车机的个人热点开启，并兼容2.4GHz网络，可通过设置-个人热点查看相关设置；<br>
+                    2）使用斑马车机配对专用USB串口线进行配对。将配对线的耳机头状插头插入记录仪的电源接口；<br>
+                    3）将配对线的USB串口插入车机的USB接口；插入之后，记录仪会提示“hello，盯盯拍”，运行指示灯呼吸闪烁；<br>
+                    4）车机界面出现“添加盯盯拍记录仪设备”弹出框，“正在配对记录仪，耐心等待120秒”；此时mini3识别串口信号后进入配对模式，读取车机的WiFi名称和密码，请勿断电或拔出配对线；<br>
+                    5）会弹出设置“*”字键抓拍和记录仪仅支持2.4GHz网络，此时配对成功；<br>
+                    6）查看车机的设置-个人热点界面，当前已连接设备列表出现了“盯盯拍行车记录仪”，说明车机已与mini3建立Wi-Fi连接成功，可在车机预览录像和拍照。</p>
+                <p>注意：</p>
+                <p class="smdetail"> 1）首次用配对线配对时，请先启动车机，并开启个人热点和设为兼容2.4 GHz；<br>
+                    2）配对线连接顺序：先将耳机头状插头与记录仪连接；然后将配对线的USB头插在车机上。因为在USB头中有配对的数据，所以接线顺序不能颠倒。</p></dd>
+        </dl>
+    </div>
+</div>
+<script>        function gs(d, a) {
+    if (d) {
+        var curVal;
+        if (d.currentStyle) {
+            curVal = d.currentStyle[a]
+        } else {
+            curVal = document.defaultView.getComputedStyle(d, null)[a]
+        }
+        return curVal;
+    }
+}
+
+var left = document.getElementById("left"), right = document.getElementById("right"),
+    lc = document.getElementById("left_con"), rc = document.getElementById("right_con"), flag = true;
+left.onclick = function () {
+    flag = true;
+    this.style.color = "#f36858";
+    this.style.borderBottom = "3px solid #f36858";
+    lc.style.display = "block";
+    right.style.color = "#808080";
+    right.style.borderBottom = "0";
+    rc.style.display = "none";
+};
+right.onclick = function () {
+    flag = false;
+    this.style.color = "#f36858";
+    this.style.borderBottom = "3px solid #f36858";
+    rc.style.display = "block";
+    left.style.color = "#808080";
+    left.style.borderBottom = "0";
+    lc.style.display = "none";
+};
+var titleL = lc.getElementsByTagName("dt"), titleR = rc.getElementsByTagName("dt"),
+    jtbk_init = gs(document.getElementById("jianTou"), 'background-image'), jtbk_v = jtbk_init.replace(/down/, "up"),
+    lastFaqClick = null;
+console.log(jtbk_init, jtbk_v);
+for (var i = 0; i < titleL.length; i++) {
+    titleL[i].id = "faq_dt_" + (Math.random() * 100);
+    titleL[i].onclick = function () {
+        var detail, jiantou, tmpDisplay = 'none', jtbk = jtbk_init;
+        if (lastFaqClick != null && lastFaqClick.id != this.id) {
+            detail = lastFaqClick.parentNode.getElementsByTagName("dd")[0];
+            jiantou = lastFaqClick.childNodes[1];
+            detail.style.display = "none";
+            jiantou.style.background = jtbk_init;
+        }
+        lastFaqClick = this;
+        detail = this.parentNode.getElementsByTagName("dd")[0];
+        jiantou = this.childNodes[1];
+        if (gs(detail, 'display') === 'none') {
+            tmpDisplay = 'block';
+        }
+        detail.style.display = tmpDisplay;
+        if (gs(jiantou, 'background-image') == jtbk_init) {
+            jtbk = jtbk_v;
+        }
+        jiantou.style.background = jtbk;
+    }
+}
+var lastFaqClickR = null;
+for (var i = 0; i < titleR.length; i++) {
+    titleR[i].id = "faq_dt_" + (Math.random() * 100);
+    titleR[i].onclick = function () {
+        var detail, jiantou, tmpDisplay = 'none', jtbk = jtbk_init;
+        if (lastFaqClickR != null && lastFaqClickR.id != this.id) {
+            detail = lastFaqClickR.parentNode.getElementsByTagName("dd")[0];
+            jiantou = lastFaqClickR.childNodes[1];
+            detail.style.display = "none";
+            jiantou.style.background = jtbk_init;
+        }
+        lastFaqClickR = this;
+        detail = this.parentNode.getElementsByTagName("dd")[0];
+        jiantou = this.childNodes[1];
+        if (gs(detail, 'display') === 'none') {
+            tmpDisplay = 'block';
+        }
+        detail.style.display = tmpDisplay;
+        if (gs(jiantou, 'background-image') == jtbk_init) {
+            jtbk = jtbk_v;
+        }
+        jiantou.style.background = jtbk;
+    }
+}
+var faq = document.getElementById("faq");
+faq.onmousedown = function (e) {
+    e.preventDefault();
+}</script>
+</body>
+</html>

@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en" ng-app="wxShareApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>盯盯拍设备告警详情</title>
+  <script src="https://code.angularjs.org/1.4.8/angular.min.js"></script>
+  <!--<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=eYf9sA6yVTFHlh9ytU4a0EYY"></script>-->
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      color: #9b9b9b;
+      max-width: 750px;
+    }
+
+    ul, li {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .back-fff {
+      background: #fff;
+    }
+
+    .wx-share-top {
+      padding: 0 .28rem;
+    }
+
+    .wx-share-top > div {
+      line-height: 1.36rem;
+      height: 1.36rem;
+      border-bottom: 1px solid #e6e5ea;
+    }
+
+    .wx-share-top > div > span {
+      float: left;
+      width: 1.4rem;
+      font-size: .32rem;
+    }
+
+    .wx-share-top > div > div {
+      width: 100%;
+      text-align: right;
+      padding-left: 1.6rem;
+      height: 100%;
+      font-size: .36rem;
+      font-weight: 600;
+      color: #000;
+    }
+
+    .wx-share-top > ul {
+      padding: .16rem 0;
+      font-size: .28rem;
+    }
+
+    .wx-share-top > ul > li {
+      line-height: .36rem;
+      padding: .16rem 0;
+      min-height: .68rem;
+    }
+
+    .wx-share-top > ul > li > span {
+      float: left;
+    }
+
+    .wx-share-top > ul > li > div {
+      text-align: right;
+      padding-left: 1.6rem;
+    }
+
+    .wx-share-bom {
+      font-size: .28rem;
+    }
+
+    .wx-share-bom > li {
+      background: #ebebeb;
+      padding-top: .48rem;
+    }
+
+    .wx-share-bom > li > div {
+      background: #fff;
+    }
+
+    .wx-share-bom > li > div > .wx-share-bom-head {
+      line-height: .8rem;
+      height: .8rem;
+      padding: 0 .2rem;
+    }
+
+    .wx-share-bom > li > div > .wx-share-bom-head > div {
+      padding-top: .2rem;
+      line-height: .64rem;
+      height: .64rem;
+      border-bottom: 1px solid #da222e;
+    }
+
+    .wx-share-bom > li > div > .wx-share-bom-head > div > span {
+      border-left: 2px solid #da222e;
+      padding-left: .1rem;
+      height: .4rem;
+      display: block;
+      line-height: .4rem;
+    }
+
+    .wx-share-bom > li > div > img {
+      width: 100%;
+    }
+
+    .wx-share-bom > li > div > .wx-share-bom-video {
+      position: relative;
+    }
+
+    .wx-share-bom > li > div > .wx-share-bom-video > video {
+      width: 100%;
+      display: block;
+    }
+
+    .wx-share-bom > li > div > .wx-share-bom-video > img {
+      width: 100%;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0
+    }
+
+    .wx-share-bom > li > div > .wx-share-bom-video > i {
+      position: absolute;
+      width: .8rem;
+      height: .8rem;
+      background: red;
+      left: 50%;
+      top: 50%;
+      margin-left: -.4rem;
+      margin-top: -.4rem;
+    }
+
+    html {
+      font-size: 42.666667px;
+    }
+
+    @media only screen and (min-width: 339px) {
+      html {
+        font-size: 45.333334px !important;
+      }
+    }
+
+    @media only screen and (min-width: 359px) {
+      html {
+        font-size: 48px !important;
+      }
+    }
+
+    @media only screen and (min-width: 374px) {
+      html {
+        font-size: 50px !important;
+      }
+    }
+
+    @media only screen and (min-width: 413px) {
+      html {
+        font-size: 55.2px !important;
+      }
+    }
+
+    @media only screen and (min-width: 479px) {
+      html {
+        font-size: 64px !important;
+      }
+    }
+
+    @media only screen and (min-width: 539px) {
+      html {
+        font-size: 72px !important;
+      }
+    }
+
+    @media only screen and (min-width: 559px) {
+      html {
+        font-size: 74.666667px !important;
+      }
+    }
+
+    @media only screen and (min-width: 639px) {
+      html {
+        font-size: 85.333334px !important;
+      }
+    }
+
+    @media only screen and (min-width: 719px) {
+      html {
+        font-size: 96px !important;
+      }
+    }
+
+    @media only screen and (min-width: 749px) {
+      html {
+        font-size: 100px !important;
+      }
+    }
+
+    @media only screen and (min-width: 1079px) {
+      html {
+        font-size: 144px !important;
+      }
+    }
+
+    @media only screen and (min-width: 1439px) {
+      html {
+        font-size: 192px !important;
+      }
+    }
+
+    .ellipsis {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .title {
+      display: inline-block;
+      width: 2.35rem;
+      vertical-align: top;
+    }
+
+    .ib {
+      display: inline-block;
+      vertical-align: top;
+    }
+  </style>
+</head>
+<body ng-controller="wxShareCtrl">
+<div class="wx-share-top back-fff">
+  <div>
+    <span>告警信息</span>
+    <div><span class="title ellipsis" ng-bind="content.detail.fenceName"></span> <span class="ib"
+                                                                                       ng-bind="content.eventTitle"></span>
+    </div>
+  </div>
+  <ul>
+    <li>
+      <span>告警时间</span>
+      <div ng-bind="data.createTime | date:'yyyy-MM-dd HH:mm:ss'"></div>
+    </li>
+    <li>
+      <span>告警地点</span>
+      <div ng-bind="content.detail.address || '未知'"></div>
+    </li>
+    <li ng-if="content.plate">
+      <span>车牌号</span>
+      <div ng-bind="content.plate"></div>
+    </li>
+    <li ng-if="content.carSeries">
+      <span>车辆信息</span>
+      <div ng-bind="content.carSeries"></div>
+    </li>
+    <li ng-if="content.driverName">
+      <span>司机姓名</span>
+      <div ng-bind="content.driverName"></div>
+    </li>
+    <li ng-if="content.driverMobile">
+      <span>司机电话</span>
+      <div>
+        <a href="tel:{{content.driverMobile}}" ng-bind="content.driverMobile"></a>
+      </div>
+    </li>
+  </ul>
+</div>
+<ul class="wx-share-bom back-fff" ng-if="(data.alarmType=== 7 || data.alarmType=== 19 ||data.alarmType=== 20) &&
+wxShareObj.showImgFlag">
+  <li>
+    <div>
+      <img ng-src="{{content.detail.mapImg}}" err-src alt="图片加载失败"/>
+    </div>
+  </li>
+</ul>
+<ul class="wx-share-bom back-fff" ng-if="data.alarmType==7">
+  <li ng-if="content.detail.hdurl">
+    <div>
+      <div class="wx-share-bom-head">
+        <div>
+          <span>前路照片</span>
+        </div>
+      </div>
+      <img ng-src="{{content.detail.hdurl}}" alt="前路照片"/>
+    </div>
+  </li>
+  <li ng-if="content.detail.rearhdurl">
+    <div>
+      <div class="wx-share-bom-head">
+        <div>
+          <span>后路照片</span>
+        </div>
+      </div>
+      <img ng-src="{{content.detail.rearhdurl}}" alt="后路照片"/>
+    </div>
+  </li>
+  <li ng-if="content.detail.videourl">
+    <div>
+      <div class="wx-share-bom-head">
+        <div>
+          <span>前路视频</span>
+        </div>
+      </div>
+      <div class="wx-share-bom-video">
+        <video controls ng-src="{{trustVideoSrc(content.detail.videourl)}}" poster="{{content.detail.hdurl}}"></video>
+      </div>
+    </div>
+  </li>
+  <li ng-if="content.detail.rearvideourl">
+    <div>
+      <div class="wx-share-bom-head">
+        <div>
+          <span>后路视频</span>
+        </div>
+      </div>
+      <div class="wx-share-bom-video">
+        <video controls ng-src="{{trustVideoSrc(content.detail.rearvideourl)}}"
+               poster="{{content.detail.rearhdurl}}"></video>
+      </div>
+    </div>
+  </li>
+</ul>
+</body>
+<script>
+    angular.module('wxShareApp', [])
+      .directive('errSrc', function () {
+          return {
+              restrict: 'A',
+              link: function (scope, element, attrs) {
+                  element.bind("error", function () {
+                      scope.$apply(function () {
+                          scope.wxShareObj.showImgFlag = false;
+                      });
+                  });
+              }
+          }
+      })
+      .controller('wxShareCtrl', ['$scope', '$http', '$sce', function ($scope, $http, $sce) {
+          var id = location.href.match('infoId=(.*)')[1];
+          //内网测试服务器
+          // var baseUrl = 'http://192.168.3.12:8080', isDebug = false;
+          var baseUrl = 'http://micob.ddpai.com:8080', isDebug = false;
+          //外网测试服务器
+//            var baseUrl='http://carmgr.ddpai.com:8080';
+//           var geoc = new BMap.Geocoder();
+          var url = isDebug ? 'mock-data/queryMsgById.json' : baseUrl + '/msg/api/v2/msg/queryMsgById';
+
+          $scope.wxShareObj = {
+              showImgFlag: true
+          };
+          $scope.trustVideoSrc = function (srcUrl) {
+              return ($sce.trustAs($sce.RESOURCE_URL, srcUrl));
+          };
+          if (isDebug) {
+              $http.get(url).success(function (data) {
+                  commonFun(data);
+              })
+          } else {
+              var param = {
+                  "infoId": id
+              };
+              $http.post(url, param).success(function (data) {
+                  commonFun(data);
+              })
+          }
+          // 公共的方法
+          function commonFun(data) {
+              $scope.data = data;
+              $scope.content = JSON.parse(data.content);
+          }
+      }]);
+</script>
+</html>

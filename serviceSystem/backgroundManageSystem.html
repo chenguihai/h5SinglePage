@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        body {
+            font-size: 16px;
+            line-height: 16px;
+            font-family: "Microsoft YaHei", arial, SimSun, "宋体";
+            background: #e4ebee;
+        }
+
+        div, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .clearFix:after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 0;
+            clear: both;
+        }
+
+        .fl {
+            float: left;
+        }
+
+        .enteranceInner {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto auto;
+            width: 990px;
+            height: 500px;
+        }
+
+        .enteranceInner > li:not(:nth-child(4n+4)) {
+            margin-right: 10px;
+        }
+
+        .linkBox {
+            display: block;
+            width: 240px;
+            /*height: 186px;*/
+            padding: 40px 19px 38px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, .5);
+            border: 1px solid rgba(255, 255, 255, 0);
+            border-radius: 8px;
+            /*box-shadow: 0 2px 20px 0 rgba(0, 0, 0, .1);*/
+        }
+
+        .linkBox:hover {
+            background: rgba(255, 255, 255, .8);
+            border: 1px solid #b3d5e9;
+        }
+
+        .icon {
+            display: block;
+            height: 128px;
+            width: 100%;
+            margin-bottom: 47px;
+        }
+        /*/200px 128px*/
+        .serverIcon {
+            background: url("http://ddp-imgs.oss-cn-hangzhou.aliyuncs.com/server/ddpall/aggr/server.png") no-repeat center center;
+        }
+
+        .toolsIcon {
+            background: url("http://ddp-imgs.oss-cn-hangzhou.aliyuncs.com/server/ddpall/aggr/tools.png") no-repeat center center;
+        }
+
+        .carIcon {
+            background: url("http://ddp-imgs.oss-cn-hangzhou.aliyuncs.com/server/ddpall/aggr/car.png") no-repeat center center;
+        }
+
+        .partnerIcon {
+            background: url("http://ddp-imgs.oss-cn-hangzhou.aliyuncs.com/server/ddpall/aggr/partner.png") no-repeat center center;
+        }
+
+        .qualityIcon {
+            background: url("http://ddp-imgs.oss-cn-hangzhou.aliyuncs.com/server/ddpall/aggr/quality.png") no-repeat center center;
+        }
+
+        .overseasIcon {
+            background: url("http://ddp-imgs.oss-cn-hangzhou.aliyuncs.com/server/ddpall/aggr/overseas.png") no-repeat center center;
+        }
+
+        .cloundEndIcon {
+            background: url("http://ddp-imgs.oss-cn-hangzhou.aliyuncs.com/server/ddpall/aggr/cloundEnd.png") no-repeat center center;
+        }
+
+        .domesticIcon {
+            background: url("http://ddp-imgs.oss-cn-hangzhou.aliyuncs.com/server/ddpall/aggr/domestic.png") no-repeat center center;
+        }
+
+        .textSpan {
+            display: block;
+            text-align: center;
+            color: #343434;
+            font-weight: 600;
+        }
+
+        .mb10 {
+            margin-bottom: 10px;
+        }
+
+        @media screen and (max-width: 990px) {
+            .enteranceInner {
+                width: 760px;
+            }
+
+            .linkBox {
+                width: 182px;
+                padding: 30px 9px 28px;
+            }
+            .icon{
+                height: 97px;
+                margin-bottom: 37px;
+            }
+            .serverIcon {
+                background-size: 164px 99px;
+            }
+
+            .toolsIcon {
+                background-size: 164px 99px;
+            }
+
+            .carIcon {
+                background-size: 164px 99px;
+            }
+
+            .partnerIcon {
+                background-size: 164px 99px;
+            }
+
+            .qualityIcon {
+                background-size: 164px 99px;
+            }
+
+            .overseasIcon {
+                background-size: 164px 99px;
+            }
+
+            .cloundEndIcon {
+                background-size: 164px 99px;
+            }
+
+            .domesticIcon {
+                background-size: 164px 99px;
+            }
+        }
+    </style>
+</head>
+<body>
+<!--后台管理系统总的入口文件 backgroundManageSystem-->
+<ul class="enteranceInner clearFix">
+    <li class="fl mb10">
+        <a class="linkBox" href="http://paidang.ddpai.com/operation">
+            <i class="icon serverIcon"></i>
+            <span class="textSpan">服务器运维管理平台</span>
+        </a>
+    </li>
+    <li class="fl mb10">
+        <a class="linkBox" href="http://testtool.ddpai.com:8020/fac">
+            <i class="icon toolsIcon"></i>
+            <span class="textSpan">产测工具后台</span>
+        </a>
+    </li>
+    <li class="fl mb10">
+        <a class="linkBox" href="http://carmgr.ddpai.com/carmgr/#/login">
+            <i class="icon carIcon"></i>
+            <span class="textSpan">车辆管理后台</span>
+        </a>
+    </li>
+    <li class="fl mb10">
+        <a class="linkBox" href="http://paidang.ddpai.com/#/login">
+            <i class="icon partnerIcon"></i>
+            <span class="textSpan">拍档后台</span>
+        </a>
+    </li>
+
+    <li class="fl">
+        <a class="linkBox" href="http://cloud.ddpai.com/iot">
+            <i class="icon qualityIcon"></i>
+            <span class="textSpan">质量管理后台</span>
+        </a>
+    </li>
+    <li class="fl">
+        <a class="linkBox" href="http://cloud.ddpai.com/fop/">
+            <i class="icon domesticIcon"></i>
+            <span class="textSpan">国内版后台</span>
+        </a>
+    </li>
+    <li class="fl">
+        <a class="linkBox" href="http://cloud.ddpai.com/hwfop/">
+            <i class="icon overseasIcon"></i>
+            <span class="textSpan">海外版后台</span>
+        </a>
+    </li>
+    <li class="fl">
+        <a class="linkBox" href="http://paidang.ddpai.com/cloudmgr">
+            <i class="icon cloundEndIcon"></i>
+            <span class="textSpan">云端管理平台</span>
+        </a>
+    </li>
+</ul>
+</body>
+</html>
