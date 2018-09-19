@@ -10,7 +10,7 @@
 		height:100%;
 		font-family:Rotobo,Helvetica,Arial,sans-serif;
 	}
-	body, h1, h2, h3, h4, h5, h6, hr, p,dl, dt {
+	body, h1, h2, h3, h4, h5, h6, hr, p,dl, dt,ul,li {
 		margin: 0;
 		padding: 0;
 	}
@@ -134,145 +134,171 @@
 		width:80%;
 		height:auto;
 	}
+	.dd{
+	    display: inline-block;
+   	    width: 6px;
+    	height: 6px;
+    	background: #808080;
+    	border-radius: 50%;
+        vertical-align: top;
+   		margin:7px 10px 0 0;
+	}
 </style>
 <body>
 <div id="faq">
 	<div id="faq_title">
-		<a href="javascript:void(0);"><div id="right"><strong>FAQ for Android<br/></strong></div></a>
-		<a href="javascript:void(0);"><div id="left"><strong>Functions related<br/></strong></div></a>
+		<a href="javascript:void(0);"><div id="right"><strong>FAQs<br/></strong></div></a>
+		<a href="javascript:void(0);"><div id="left"><strong>Trouble shooting<br/></strong></div></a>
 	</div>
 	<div id="left_con">
+		<!--Q1 新增 -->
 		<dl>
-			<dt class="title"><h2>How to download videos on mobile APP?</h2><div id="jianTou"></div></dt>
-			<li class="detail">
-				<p>Connect camera with mobile, make preview interface in full screen or horizontal screen mode, it shows “scissor”icon, click it here:</p>
-				<p class="smdetail">1. Drag the single line to choose video timing </p>
-				<p class="smdetail">2. Drag the double line at bottom to choose any video within 5 minutes, and please make sure that this double line must be in front of single line</p>
-				<p class="smdetail">3. Click“download”icon to start download video until it reaches to 100%.</p>
-			</li>
+			<dt class="title"><h2>Wi-Fi is always disconnected?</h2><div id="jianTou"></div></dt>
+			<dd class="detail">
+				<p>First, go in to Settings > Wi-Fi and hit the menu button, then select Advanced. You should then see "Scanning always available" with a checkbox next to it. Uncheck the box and your device will no longer scan for networks at all times. </p>
+				<p>Second, if  "Scanning always available" checkbox is checked, make sure your smart phone is near the dash cam.</p>
+				<p>Third, make sure your devices are not surrounded by too many Wi-Fi networks.</p>
+			</dd>
 		</dl>
+		<!--Q2 新增 -->
 		<dl>
-			<dt class="title"><h2>How to set camera( only M6 series) battery life?</h2><div id="jianTou"></div></dt>
-			<li class="detail">
-				<p class="smdetail">1. At present, it;s defaulted as 0 sec, camera turned off once power off.</p>
-				<p class="smdetail">2. Please make sure camera battery is with full power ( working over 2hs with power), then connect camera, launch APP-Me-Settings-Camera settings-Advanced settings-Set battery life--10sec, 30 sec, 1min, 3min, 5 min are optional to choose.</p>
-			</li>
+			<dt class="title"><h2>why I can't connect to my DDPAI Dash Cam from the App?</h2><div id="jianTou"></div></dt>
+			<dd class="detail">
+				<p>There are several reasons this may happen:</p>
+				<p class="smdetail"><span class="dd"></span>Ensure the DDPAI Dash Cam has been turned on (the working indicator light is blinking slowly).</p>
+				<p class="smdetail"><span class="dd"></span>Ensure you can find the Wif-Fi from WLAN (Android) / Wi-Fi (iOS) list, one common problem is that your phone/tablet disabled App from trust application. You need to have your device enable DDPAI App permission, from Settings-> Security and privacy-> Application Permissions, to the DDPAI Dash Cam Wi-Fi. It may also help to connect to the DDPAI Wi-Fi directly from your device's Wi-Fi settings menu, then returning to the DDPAI App and proceeding as usual.</p>
+				<p class="smdetail"><span class="dd"></span>In cases when your device installed third party App manager, find DDPAI App and enable all permissions.</p>
+				<p class="smdetail"><span class="dd"></span>It may also help to power cycle (reboot) the DDPAI Dash Cam prior to attempting to connect via Wi-Fi.</p>
+			</dd>
+		</dl>
+		<!--Q3 新增 -->
+		<dl>
+			<dt class="title"><h2>After connected with the dash cam Wi-Fi, why can’t my Android access it’s mobile data?</h2><div id="jianTou"></div></dt>
+			<dd class="detail">
+				<p>Due to an Android bug affecting all dash cams, the phone cannot access mobile data while it is connected to the DDPAI Dash Cam’s Wi-Fi. If you want to use your phone’s data network, simply connect to the DDPAI Dash Cam’s Wi-Fi when you need to watch the recorded videos only.</p>
+			</dd>
+		</dl>
+		<!--Q4 新增 -->
+		<dl>
+			<dt class="title"><h2>How does the Wi-Fi work? Do I have to turn on hotspot on phone?</h2><div id="jianTou"></div></dt>
+			<dd class="detail">
+				<p>You connect your phone to the camera Wi-Fi in order to access the photos and videos. It records video whenever it has power, so your phone doesn’t have to be connected to it for it to record. It has it’s own memory card, so it doesn’t have to be connected to your phone to save data.</p>
+			</dd>
+		</dl>
+		<!--Q5 新增 -->
+		<dl>
+			<dt class="title"><h2>I am seeing a solid red light and the App fails to connect to the dash cam. What can I do?</h2><div id="jianTou"></div></dt>
+			<dd class="detail">
+				<p> Please format the micro SD card to reset your card, then try to reset your dash cam.If you still have a problem, please email to feedback@ddpai.com, and our support team will be happy to assist you.</p>
+			</dd>
+		</dl>
+		<!--Q6 新增 -->
+		<dl>
+			<dt class="title"><h2>Why the Remote Snapshot is not working?</h2><div id="jianTou"></div></dt>
+			<dd class="detail">
+				<p>First, make sure the Remote Snapshot is near your Dash Cam, second, make sure it is not run out of battery (blue light blinks while press it), third,pairing Remote Snapshot with Dash Cam again.
+				Please let us know if you still have issues with the Remote Snapshot.</p>
+			</dd>
 		</dl>
 	</div>
 	<div id="right_con">
+		<!--Q1 新增 -->
 		<dl>
-			<dt class="title"><h2>Indicator lights introductions</h2><div id="jianTou"></div></dt>
-			<li class="detail">
-				<p>M5/M5S：The middle blue light is operation LED, flashing means normal working. The first green light is power LED, flashing means normal working. The third green light is WiFi LED, the indicator keeps on when APP is not connected with camera, then starts flashing after connected. </p><br>
-				<p>M6：The power red LED keeps on is normal working. WiFi green LED 1f/1s is normal working. The blue LED, flashing is searching GPS information, keeps on is positioned successfully.</p><br>
-				<p>M6C: The power red LED keeps on is normal working. WiFi green LED 1f/1s is normal working. Blue LED keeps off is normal working. </p><br>
-				<p>mini：The red light is operation LED, flashing means normal working. The blue light is parking mode LED, when blue is flashing and red keeping off means under parking mode.</p>
-			</li>
+			<dt class="title"><h2>What is emergency video?</h2><div id="jianTou"></div></dt>
+			<dd class="detail">
+				<p>For mini (without Snapshot Button), mix3:</p>
+				<p class="smdetail">When the G-sensor is turned on and an impact is detected, the Dash Cam will record a 10
+					second emergency video. These recordings are saved in the emergency gallery (you can find it in the 202emegency folder from micro SD card/ eMMC, maximally 10 emergency video files can be saved). The emergency recordings will cut off a normal recording cycle and make it shorter than the normal recording loop.</p><br>
+				<p>For the rest Dash Cam:</p>
+				<p class="smdetail">When the G-sensor is turned on and a motion or impact is detected, the dash cam will lock this related video. These recordings (maximal 5 clip) will not be replaced by the newest loop recording.</p>
+				
+			</dd>
 		</dl>
+		<!--Q2 新增 -->
 		<dl>
-			<dt class="title"><h2>How to playback videos? How to download videos to mobile phones?</h2><div id="jianTou"></div></dt>
-			<li class="detail">
-				<p>When in playback interface on APP, make it full screen or horizontal screen, then drag the single progress bar to left side to playback the recorded videos. This only plays the videos on TF card directly, will not download to mobile phone to occupy storage space.</p><br>
-				<p>When in preview or playback mode, make it full screen, click scissor icon to download any video within 5 minutes.</p>
-			</li>
+			<dt class="title"><h2>What kind of TF cards does DDPAI Dash Cam support?</h2><div id="jianTou"></div></dt>
+			<dd class="detail">
+				<p>DDPAI Dash Cam supports a class 10 micro SD card up to 128GB. Suggested micro SD card brands: Kingston, Samsung, Toshiba, Netac. Format the card via App before use to ensure the normal function of the dash cam. Long-time use of the card will compromise the read / write speed. We suggest you format it regularly to make video recording smoother.</p>
+			</dd>
 		</dl>
+		<!--Q3 新增 -->
 		<dl>
-			<dt class="title"><h2>App requirements for Android mobile</h2><div id="jianTou"></div></dt>
-			<li class="detail">
-				<p>It;s highly suggested Android 3.0 system above, CPU single core 1GHz above, Ram 512MB above, over 2 points Multi-touch screen , 480×800 resolution above.</p>
-			</li>
+			<dt class="title"><h2>Shall I keep the dash cam connected with my phone when it is working?</h2><div id="jianTou"></div></dt>
+			<dd class="detail">
+				<p>The dash cam starts to record videos automatically when the car is started without needing to connect to your phone. However, if they are connected, you can preview, download, and play back the videos from the app on your phone.</p>
+			</dd>
 		</dl>
+		<!--Q4 新增 -->
 		<dl>
-			<dt class="title"><h2>How to deal with pixilation and voice interruption problems? </h2><div id="jianTou"></div></dt>
-			<li class="detail">
-				<p>1. Format the SD card on APP”storage management” or on PC, please copy the data on SD card if necessary,  in case of data losing after formatted. It’s better that format the SD card in every 2 weeks to make sure it’s normal recording.</p><br>
-				<p>2. Inserting and pulling SD card is forbidden when in recording mode, it may cause some physical damages on SD car.</p><br>
-				<p>3. Please choose the original brand SD card with high speed class 10 above. Max 32GB for Mini, M6/M6C, M5 cameras; Max 64GB for Mini2, M6 Plus cameras. </p>
-			</li>
+			<dt class="title"><h2>Why some of the dash cam video recordings are missing?</h2><div id="jianTou"></div></dt>
+			<dd class="detail">
+				<p>Make sure the App& firmware are the latest version. If there is “Storage exception” notification means the SD card is corrupted and need to be replaced.</p>
+			</dd>
 		</dl>
+		<!--Q5 新增 -->
 		<dl>
-			<dt class="title"><h2>Why no voice when playback recorded videos on APP?</h2><div id="jianTou"></div></dt>
-			<li class="detail">
-				<p>It may because you close the microphone voice, please open it on APP- camera settings-Open microphone. </p>
-			</li>
+			<dt class="title"><h2>How 24 hours Parking Monitoring works?</h2><div id="jianTou"></div></dt>
+			<dd class="detail">
+					<p>According to different power supply types, there are two Parking Mode:</p>
+				
+					<p>1.Powered by constant power:</p>
+					<p  class="smdetail">When the Dash Cam goes into standby for longer than 15 minutes, the DDPAI Dash Cam will go into Parking Mode, in this mode, you can select normal recording (30 frames per second) or time-lapse recording (1 frame per second), stay on the preset time (set via App), and automatically deactivated and switches back to continuous recording when there is a motion.</p>
+
+					<p>2.Powered by DDPAI hardwire kit:</p>
+					<p  class="smdetail">When the parking mode is on (on/off via App), the Dash Cam will go into time-lapse recording (1 frame per second) once the car is turned off or the ignition is off, and takes a snapshot when a motion/ impact is detected.</p>
+					<p  class="smdetail">When the parking mode is off (on/off via App), the Dash Cam goes into sleep mode once the car is turned off or the ignition is off, automatically deactivated and switches back to record for 2 minutes when a motion /impact is detected.</p>
+			</dd>
 		</dl>
+		<!--Q6 新增 -->
 		<dl>
-			<dt class="title"><h2>Instructions of APP auto download pictures</h2><div id="jianTou"></div></dt>
-			<li class="detail">
-				<p>Open APP on Android/iPhone, within the WiFi range of DDpai cameras, it’s defaulted as auto download pictures when clip remote control. If mobile phone is under standby mode:</p><br>
-				<p id="smdetail">1. Android will default auto download pictures even at standby mode, if Android users forbid running DDpai APP at background, then it will not download pictures at standby mode, users can choose manually download later. ( PS: DDpai APP V3.0 above has setting of”Auto download the captured file”, If “Yes” , it will auto download pictures while APP keeps running at background even at standby mode, If “ No”, will not.</p><br>
-				<p id="smdetail">2. iPhone will hang all the background programs at standby mode, so it will not auto download pictures, but can manually download later. </p>
-			</li>
+			<dt class="title"><h2>Will high temperatures affect the DDPAI Dash Cam?</h2><div id="jianTou"></div></dt>
+			<dd class="detail">
+				<p>DDPAI protects itself in high temperatures. When the DDPAI Dash Cam's electronics reach 160F, the device will go into shutdown and automatically recover when it cools down. </p>
+			</dd>
 		</dl>
+		<!--Q7 新增 -->
 		<dl>
-			<dt class="title"><h2>App can not connect with camera?</h2><div id="jianTou"></div></dt>
-			<li class="detail">
-				<p>1. Make sure whether the camera is started and working well( power LED keeps on, operating LED is flashing). If power LED keeps off, please check power cable or car charger.</p><br>
-				<p>2. Refresh cameras nearby on App, connect the camera with right password--1234567890. </p>
-				<p>3. When mobile is in standby mode, App will disconnect with camera in order to save power, then you need to wake mobile, App will reconnect the camera, but be patient to wait for seconds before it connected successfully.</p>
-				<p>4. For some android phone, you may need to turning “OFF” Mobile data on your Android phone, which allows the camera to connect to APP.</p>
-			</li>
+			<dt class="title"><h2>How to keep the lens clean?</h2><div id="jianTou"></div></dt>
+			<dd class="detail">
+				<p>Do not touch the lens with your hands to avoid fingerprint smudges. Use a clean soft cloth to wipe the lens when it gets dirty. For better results, please keep the car windshield clean to avoid contamination.</p>
+			</dd>
 		</dl>
+		<!--Q8 新增 -->
 		<dl>
-			<dt class="title"><h2>How to connect videos with remote control clip?</h2><div id="jianTou"></div></dt>
-			<li class="detail">
-				<p>Open APP, Me-settings-camera settings-Capture with video clip, slide to right to open. After open it, click the remote snap to capture a photo, and record 10s video sync( 5s before and 5s after when click). The captured pictures and 10s videos will be separately saved to TF card, and can be auto/ manual download into mobile phone later.</p>
-			</li>
+			<dt class="title"><h2>What if the mount loses it’s stickiness?</h2><div id="jianTou"></div></dt>
+			<dd class="detail">
+				<p>There is a spare 3m adhesive pad. Also clean the mounting area before re-attaching it to the windshield.</p>
+			</dd>
 		</dl>
+		<!--Q9 新增 -->
 		<dl>
-			<dt class="title"><h2>Instructions of camera warning voices</h2><div id="jianTou"></div></dt>
-			<li class="detail">
-				<p>Continuous beep voice: SD card is abnormal, please check whether SD card is inserted, and format SD card or change the new card.</p><br>
-				<p>Click sound of remote control:<br> 1. Download captured pictures to mobile phone  <br>2. Format SD card, close”Capture with video clip” to save storage space.</p>
-			</li>
+			<dt class="title"><h2>Can I pair my Dash Cam with 2 Remote Snapshot?</h2><div id="jianTou"></div></dt>
+			<dd class="detail">
+				<p>Currently you only can pair one Remote Snapshot with one Dash Cam, the latest pairing will replace the previous one.</p>
+			</dd>
 		</dl>
+		<!--Q10 新增 -->
 		<dl>
-			<dt class="title"><h2>How to reset camera?</h2><div id="jianTou"></div></dt>
-			<li class="detail">
-				<p>Reset key is near to camera card slot( with R or RESET mark), use one tool to long press it 6-10s until the camera restarts is ok. </p>
-			</li>
+			<dt class="title"><h2>How do I update firmware of the DDPAI Dash Cam?</h2><div id="jianTou"></div></dt>
+			<dd class="detail">
+				<p>First, make sure that the DDPAI Dash App is updated from the App store.</p>
+				<p>Next, open the Wi-Fi settings of your mobile device and connect to the DDPAI Dash Cam via
+					Wi-Fi. Once you’re connected, open up the App. You will get a notification asking you to update.
+					If you don’t get the notification, you can click on the bust in the lower right corner of the App to manually update. If you cannot update the firmware via DDPAI Dash APP, you can also update the firmware via TF card. Here is how to update the firmware manually:</p>
+				<p class="smdetail">1)Download the latest firmware for your camera and copy the firmware folder you have unzipped onto the SD card</p>
+				<p class="smdetail">2) place the SD card back into the camera and power on, it will apply the firmware automatically. </p>
+				<p>Note: </p>
+				<p  class="smdetail">Device red indicator will blinking while updating.</p>
+				<p class="smdetail">Do not power off the device while updating.</p>
+				<p class="smdetail">In case your Dash Cam uses an eMMC storage, copy the firmware to your Dash Cam directly.</p>
+			</dd>
 		</dl>
+		<!--Q11 新增 -->
 		<dl>
-			<dt class="title"><h2>Instructions of camera voice</h2><div id="jianTou"></div></dt>
-			<li class="detail">
-				<p>starting up“Hello, 盯盯拍“： camera starts successfully <p><br>Turning off music: camera turns off <p><br>Clicks( taking photos): taking photos successfully <p><br>Tinkle( taking photos): taking photos so fast, please wait; downloading photos, please wait. <p><br>Jingle sound: adjusting the voice <p><br>Continuous tinkle: SD card is abnormal, not insert TF card; TF card is not inserted well; TF card memory is full, need to download or delete data.
-			</p>
-			</li>
-		</dl>
-		<dl>
-			<dt class="title"><h2>Mobile phone must be on when using wifi cameras?</h2><div id="jianTou"></div></dt>
-			<li class="detail">
-				<p>DDpai cameras start auto cycle recording after connected power in car, all videos were recorded on TF card, it’s no related to mobile phone, but you can use mobile phone to preview, playback and download videos through DDpai APP directly.
-				</p>
-			</li>
-		</dl>
-		<dl>
-			<dt class="title"><h2>Did it use mobile phone 2G/3G data when do operations on camere?</h2><div id="jianTou"></div></dt>
-			<li class="detail">
-				<p>No, the mobile phone is connected with camera via WiFi, just like the BT connecting ways, so it will not use 2G/3G data.
-				</p>
-			</li>
-		</dl>
-		<dl>
-			<dt class="title"><h2>How long it will record for 16G card?</h2><div id="jianTou"></div></dt>
-			<li class="detail">
-				<p>16G card can record 4hs under 1080P, 32G can record 8hs, and it can record longer time under lower 720P or 480P.
-				</p>
-			</li>
-		</dl>
-		<dl>
-			<dt class="title"><h2>How to upgrade camera?</h2><div id="jianTou"></div></dt>
-			<li class="detail">
-				<p>1. If there is new FW version published, APP will prompt to ask for upgrading( Cancel / OK). Or you can open 	APP-Me-About, click to detect the latest version, then it will auto download upgrade package.
-				</p><br>
-				<p>2. Downloading the original upgrade package from DDpai website, extract it first and copy whole “upgrade” file into SD card, insert SD card into camera, connect camera with power, it will auto upgrade until the camera restarts again. </p>
-			</li>
-		</dl>
-		<dl>
-			<dt class="title"><h2>Where to find out DDpai recorded pictures and videos? How to save to computer?</h2><div id="jianTou"></div></dt>
-			<li class="detail">
-				<p>For Android 4.4 below, check “vcacamera” folder on TF card.<br>For Android 4.4 above, check Android/data/com.vyou.vcameraclient .<br>Use USB to connect mobile phone with computer , download the files you want from exact folder.<br>For iPhone, need to download itunes app to computer first, then connect iPhone with computer to find out DDpai App, choose the files you want and copy into computer. </p>
-			</li>
+			<dt class="title"><h2>How to change the Wi-Fi name and password of the Dash Cam?</h2><div id="jianTou"></div></dt>
+			<dd class="detail">
+				<p>Make sure your Dash Cam is connect to App, then go into Me->Settings->Camera Settings, tap on Camera Name to change your Wi-Fi name, tap on Camera Password to change your Wi-Fi name. In case you forget the password, use a pin insert into REST hole to restore to default settings, initial password is 1234567890.</p>
+			</dd>
 		</dl>
 	</div>
 </div>
@@ -322,13 +348,13 @@
 		titleL[i].id = "faq_dt_"+(Math.random()*100);
 		titleL[i].onclick=function(){
 			if(lastFaqClick!=null&&lastFaqClick.id!=this.id){
-				var detail=lastFaqClick.parentNode.getElementsByTagName("li")[0];
+				var detail=lastFaqClick.parentNode.getElementsByTagName("dd")[0];
 				detail.style.display="none";
 				var jiantou=lastFaqClick.childNodes[1];
 				jiantou.style.background=jtbk_init;
 			}
 			lastFaqClick=this;
-			var detail=this.parentNode.getElementsByTagName("li")[0];
+			var detail=this.parentNode.getElementsByTagName("dd")[0];
 			var jiantou=this.childNodes[1];
 			var tmpDisplay='none';
 			if (gs(detail,'display')=='none'){
@@ -347,13 +373,13 @@
 		titleR[i].id = "faq_dt_"+(Math.random()*100);
 		titleR[i].onclick=function(){
 			if(lastFaqClickR!=null&&lastFaqClickR.id!=this.id){
-				var detail=lastFaqClickR.parentNode.getElementsByTagName("li")[0];
+				var detail=lastFaqClickR.parentNode.getElementsByTagName("dd")[0];
 				detail.style.display="none";
 				var jiantou=lastFaqClickR.childNodes[1];
 				jiantou.style.background=jtbk_init;
 			}
 			lastFaqClickR=this;
-			var detail=this.parentNode.getElementsByTagName("li")[0];
+			var detail=this.parentNode.getElementsByTagName("dd")[0];
 			var jiantou=this.childNodes[1];
 			var tmpDisplay='none';
 			if (gs(detail,'display')=='none'){
